@@ -274,9 +274,11 @@ case "$x" in
    sleep 3
    ;;
    25)
+   clear
    blockt
    ;;
    26)
+   clear
    botssh
    ;;
    27)
@@ -416,8 +418,9 @@ case "$x" in
    echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
    ;;
    10)
+   clear
    conexao
-   exit;
+   echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
    ;;
    11)
    clear
