@@ -42,10 +42,10 @@ clear; exit 1
 }
 }
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "BEM VINDO AO SSHPLUS MANAGER Edit:@Kaua_VPN" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "BEM VINDO AO SSHPLUS MANAGER" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "             \033[1;31mATENCAO! \033[1;33mESSE SCRIPT IRÁ !\033[0m"
+echo -e "             \033[1;31mATENCAO! \033[1;33mESSE SCRIPT IRA !\033[0m"
 echo ""
 echo -e "\033[1;31m• \033[1;33mINSTALAR UM CONJUNTO DE SCRIPTS COMO FERRAMENTAS\033[0m"
 echo -e "\033[1;33m  PARA O GERENCIAMENTO DE REDE, SISTEMA E USUARIOS\033[0m"
@@ -56,28 +56,28 @@ echo ""
 echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×[\033[1;33m • \033[1;32mEDIT:@Kaua_VPN\033[1;33m •\033[1;31m ]≠×≠×≠×≠×≠×≠×≠×\033[0m"
 echo ""
 #-----------------------------------------------------------------------------------------------------------------
-echo -ne "\033[1;36mGERAR KEY [N/S]: \033[1;37m"; read x
+echo -ne "\033[1;36mGERAR KEY FREE [N/S]: \033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
-echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/main/Install/list > /dev/null 2>&1; verif_key
+echo -e "\n\033[1;36mVERIFICANDO... \033[1;37m 16983:16085\033[0m" ; rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/master/Install/list > /dev/null 2>&1; verif_key
 sleep 3s
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
-wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/main/Install/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/master/Install/versao > /dev/null 2>&1
 > /dev/null 2>&1
 wget https://www.twitter.com/Kaua_VPN > /dev/null 2>&1
 > /dev/null 2>&1
 rm Kaua_VPN > /dev/null 2>&1
 cd /bin/ > /dev/null 2>&1
 rm v2raymanager > /dev/null 2>&1
-wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/main/Modulos/v2raymanager > /dev/null 2>&1
+wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/master/Modulos/v2raymanager > /dev/null 2>&1
 wget https://raw.githubusercontent.com/kauavpnlite/ospacotesmb/main/botteste.sh >/dev/null 2>&1
 chmod 777 v2raymanager > /dev/null 2>&1
 chmod 777 botteste.sh > /dev/null 2>&1
 mkdir $HOME/BOT >/dev/null 2>&1
 cd $HOME/BOT
-wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/main/Sistema/ShellBot.sh >/dev/null 2>&1
+wget https://raw.githubusercontent.com/kauavpnlite/SSHPLUS/master/Sistema/ShellBot.sh >/dev/null 2>&1
 chmod 777 ShellBot.sh > /dev/null 2>&1
 cd > /dev/null 2>&1
 #-----------------------------------------------------------------------------------------------------------------
@@ -145,5 +145,5 @@ cd $HOME
 echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
-echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Kaua_VPN O MAIS BRABO DA NET ⚡\033[0m"
+echo -e "\033[1;33m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Kaua_VPN\033[0m"
 rm $HOME/Plus && cat /dev/null > ~/.bash_history && history -c
